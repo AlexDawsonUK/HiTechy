@@ -1,0 +1,20 @@
+{
+	"short_name": "HiTechy",
+	"name": "HiTechy",
+	"description": "HiTechy is a studio founded by Alexander Dawson. Services include web and product design and development, consulting and bespoke writing.",
+	"icons": [
+		{
+			"src": "images/droidx192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "images/droidx512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#ffffff",
+	"background_color": "#ffffff",
+	"display": "standalone"
+}

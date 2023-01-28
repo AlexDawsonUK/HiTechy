@@ -1,0 +1,213 @@
+@font-face {
+	font-family:'Geomanist';
+	src:local('Geomanist Regular'),
+		url('fonts/Geomanist-Regular.woff2') format('woff2'),
+		url('fonts/Geomanist-Regular.woff') format('woff'); 
+	font-display: swap;
+}
+@font-face {
+	font-family:'Geomanist';
+	src:local('Geomanist Book'),
+		url('fonts/Geomanist-Book.woff2') format('woff2'),
+		url('fonts/Geomanist-Book.woff') format('woff'); 
+	font-display: swap;
+	font-weight: bold;
+}
+@media screen {
+	::selection { background-color: #333333; color: #ffffff; }
+	.hide { height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
+	.t_show:target { height: auto; left: auto; overflow: auto; position: static; top: auto; width: 100%; }
+	.body, .error-head, .error-sub, .error-txt, .heading, .txt {
+		align-items: center; }
+	.code, .heading {
+		background-color: #d9d9d9;
+		flex-direction: column; }
+	.profile, .t_show {
+		background-color: #f6f6f6;
+		border-radius: 1em;
+		display: grid;
+		grid-template-columns: 25% 75%;
+		min-height: 10em;
+		overflow: hidden; }
+	.logo-hi::before, .logo-hi::after {
+		border-bottom-width: 0.2em;
+		border-color: transparent;
+		border-left-width: 0.24em;
+		border-right-width: 0.3em;
+		border-top-width: 0.24em;
+		content: "";
+		top: 32%; }
+	.logo-hi {
+		border-color: #333333;
+		border-width: 0.12em;
+		margin-right: 0.1em;
+		padding-left: 0.2em;
+		padding-top: 0.15em; }
+	.button-link, .logo-hi {
+		border-radius: 0.25em; }
+	.logo-hi::before {
+		border-right-color: #333333;
+		left: 0; }
+	.logo-hi::after {
+		border-right-color: #d9d9d9;
+		left: 0.15em; }
+	.button-link, .logo-hi, .logo-hi::before, .logo-hi::after {
+		border-style: solid; }
+	.button-link {
+		border-width: 0.15em;
+		margin-top: -0.65em;
+		padding: 0.5em; }
+	.error-head, .error-sub, .heading {
+		box-sizing: border-box;
+		cursor: default;
+		letter-spacing: 0.05em;
+		padding: 1em;
+		text-transform: uppercase; }
+	.button-link, .copyright, .error-sub, .error-txt, .logo, .txt, .url {
+		color: #333333; }
+	.copyright:before {
+		content: "\00a9"; }
+	.copyright:hover span:before {
+		content: "2007 - "; }
+	.copyright:before, .copyright:hover span:before {
+		cursor: text; }
+	.body, .button, .code, .error-head, .error-sub, .error-txt, .footer, .heading, .main, .txt {
+		display: flex; }
+	.button, .copyright {
+		flex-basis: 50%; }
+	.footer {
+		flex-direction: row-reverse;
+		margin: 20em 3em 0 3em;
+		width: 100%; }
+	.body {
+		flex-wrap: wrap;
+		height: 100vh; }
+	.button-img {
+		float: left;
+		height: 24px;
+		margin-top: 0.05em;
+		width: 24px; }
+	.button-link, .copyright, .error-head, .error-sub, .error-txt, .logo, .txt {
+		font-family: 'Geomanist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; }
+	.button-link, .copyright  {
+		font-size: 1.25em; }
+	.logo {
+		font-size: 1.5em;
+		padding-bottom: 0.3em;
+		padding-left: 0.5em;
+		padding-top: 0.3em;
+		position: relative; }
+	.code, .error-head, .heading, .body {
+		justify-content: center; }
+	.button {
+		justify-content: center; }
+	.body, .button, .copyright, .error-head, .error-sub, .heading {
+		margin: 0 auto; }
+	.main {
+		margin: 0 3em;
+		width: 1100px; }
+	.error-sub, .error-txt, .txt {
+		padding-left: 1em;
+		padding-right: 1em; }
+	.button-img, .copyright:before, .logo, .logo-hi {
+		padding-right: 0.2em; }
+	.footer, .logo-hi::before, .logo-hi::after {
+		position: absolute; }
+	.copyright {
+		text-align: center; }
+	.button-link, .logo {
+		text-decoration: none; }
+	.error-head, .heading, .profile {
+		width: 100%; }
+}
+@media screen and (max-width: 880px) {
+	.profile {
+		grid-template-columns: 35% 65%; }
+}
+@media screen and (max-width: 650px) {
+	.error-sub, .error-txt, .profile, .t_show, .txt {
+		display: block; }
+	.url {
+		margin-left: 0;
+		margin-right: 0; }
+	.error-sub, .error-txt, .txt {
+		text-align: center; }
+}
+@media screen and (max-width: 520px) {
+	.button, .footer {
+		display: block;
+		text-align: center; }
+	.button {
+		margin: 2em 0; }
+	.button-img {
+		float: none;
+		vertical-align: middle; }
+	.error-sub, .error-txt, .txt {
+		padding-bottom: 1em; }
+}
+@media (prefers-color-scheme: dark) {
+	.body {
+		background-color: #121212; }
+	.t_show, .profile {
+		background-color: #222222; }
+	.code, .heading {
+		background-color: #383838; }
+	.button-link, .logo-hi {
+		border-color: #575757; }
+	.logo-hi::after {
+    	border-right-color: #383838; }
+	.logo-hi::before {
+    	border-right-color: #575757; }
+	.button-link, .copyright, .error-head, .error-sub, .error-txt, .logo, .txt, .url {
+		color: #dfdfdf; }
+}
+@media (prefers-reduced-motion: reduce), (update: slow) {
+	*:not(.safe-animation),
+	*:not(.safe-animation)::before,
+	*:not(.safe-animation)::after {
+		animation-delay: -1ms !important;
+		animation-duration: 1ms !important;
+		animation-iteration-count: 1 !important;
+		background-attachment: initial !important;
+		scroll-behavior: auto !important;
+		transition-delay: -1ms !important;
+		transition-duration: 1ms !important;
+	}
+}
+@media print {
+	.error-head, .heading {
+		border-color: #000000;
+		border-style: solid;
+		border-width: 2px 0;
+		letter-spacing: 2px;
+		padding: 0.4em 0;
+		text-transform: uppercase; }
+	.button-link, .logo, .url {
+		color: #000000; }
+	.copyright:before {
+		content: "\00a9";
+		padding-right: 0.2em; }
+	.button-link::after, .url::after {
+		content: " (" attr(href) ")"; }
+	.t_show:target {
+		display: block; }
+	.button-img, .hide {
+		display: none; }
+	.button-link, .copyright, .error-sub, .error-txt, .logo, .txt , .t_show:target {
+		font-family: Constantia, Palatino, 'Book Antiqua', 'Palatino Linotype', serif; }
+	.logo {
+		font-size: 1.5em; }
+	.error-head, .heading {
+		font-size: 1.75em; }
+	.error-head {
+		font-size: 3em;
+		margin: 0.5em 0; }
+	.url::after {
+		font-weight: normal; }
+	.contact-img {
+		height: 50px; }
+	.button-link, .logo, .url {
+		text-decoration: none; }
+	.button, .copyright, .error-head, .error-sub, .error-txt, .heading, .logo, .t_show:target, .txt {
+		text-align: center; }
+}
