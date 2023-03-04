@@ -81,7 +81,7 @@
 		width: 100%; }
 	.body {
 		flex-wrap: wrap;
-		height: 100vh; }
+		height: 100dvh; }
 	.button-img {
 		float: left;
 		height: 24px;
