@@ -101,7 +101,7 @@
 		justify-content: center; }
 	.button {
 		justify-content: center; }
-	.body, .button, .copyright, .error-head, .error-sub, .heading {
+	.body, .button, .copyright, .error-head, .error-sub, .heading, main article {
 		margin: 0 auto; }
 	.main {
 		margin: 0 3em;
